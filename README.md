@@ -27,10 +27,12 @@ Labsmobile API documentation can be found[here][apidocs].
 ## Installation
 
 **Place the LabsMobile SDK in the libs directory of your application module.**
+
 **Add the following dependencies in the build.gradle file:**
   - compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
   - compile 'com.squareup.retrofit2:retrofit:2.0.0'
-  - compile 'com.squareup.retrofit2:converter-simplexml:2.0.0-beta4'   
+  - compile 'com.squareup.retrofit2:converter-simplexml:2.0.0-beta4' 
+
 **If there are dependency conflicts change the last line of the above snippet to:**
   ```java
     compile('com.squareup.retrofit2:converter-simplexml:2.0.0-beta4') {
@@ -39,6 +41,7 @@ Labsmobile API documentation can be found[here][apidocs].
         exclude group: 'stax', module: 'stax'
     }
   ```
+  
 **You will need the following permission declared in the AndroidManifest.xml file in order to use any method of the SDK.**
   ```java
   <uses-permission android:name="android.permission.INTERNET" />
@@ -49,6 +52,7 @@ Labsmobile API documentation can be found[here][apidocs].
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
   ```
+
 ## Samples
 
 ### Send of SMS
