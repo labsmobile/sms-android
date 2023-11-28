@@ -21,18 +21,17 @@ Labsmobile API documentation can be found[here][apidocs].
 
 - Android development environment.
 - LabsMobile SDK for Android. More information at [SDK Android][sdk].
-- A user account with LabsMobile. Click on the link to create an account:[here][signUp].
+- A user account with LabsMobile. Click on the link to create an account [here][signUp].
 
-Aunque este módulo es compatible con la versión 2 de python, **se recomienda utilizar la versión 3**.
 
 ## Installation
 
-- **Place the LabsMobile SDK in the libs directory of your application module.**
-- **Add the following dependencies in the build.gradle file:**
+**Place the LabsMobile SDK in the libs directory of your application module.**
+**Add the following dependencies in the build.gradle file:**
   - compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
   - compile 'com.squareup.retrofit2:retrofit:2.0.0'
   - compile 'com.squareup.retrofit2:converter-simplexml:2.0.0-beta4'   
-- **If there are dependency conflicts change the last line of the above snippet to:**
+**If there are dependency conflicts change the last line of the above snippet to:**
   ```java
     compile('com.squareup.retrofit2:converter-simplexml:2.0.0-beta4') {
         exclude group: 'xpp3', module: 'xpp3'
@@ -40,16 +39,16 @@ Aunque este módulo es compatible con la versión 2 de python, **se recomienda u
         exclude group: 'stax', module: 'stax'
     }
   ```
-- **You will need the following permission declared in the AndroidManifest.xml file in order to use any method of the SDK.**
+**You will need the following permission declared in the AndroidManifest.xml file in order to use any method of the SDK.**
   ```java
   <uses-permission android:name="android.permission.INTERNET" />
   ```
 
-- **If you want to use the functionality of automatic background verifications, you will need these additional persmissions.**
-```java
-  <uses-permission android:name="android.permission.RECEIVE_SMS" />
-  <uses-permission android:name="android.permission.READ_SMS" />
-```
+**If you want to use the functionality of automatic background verifications, you will need these additional persmissions.**
+  ```java
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+  ```
 ## Samples
 
 ### Send of SMS
