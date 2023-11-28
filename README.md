@@ -1,12 +1,10 @@
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/152215067?s=200&v=4" height="128">
+  <img src="https://avatars.githubusercontent.com/u/152215067?s=200&v=4" height="80">
 </p>
 
-![](https://i.imgur.com/waxVImv.png)
 # LabsMobile-Android
-![](https://i.imgur.com/waxVImv.png)
-v
- ![](https://img.shields.io/badge/version-1.0.0-blue.svg)
+
+![](https://img.shields.io/badge/version-1.0.0-blue.svg)
  
 Send SMS messages through the LabsMobile platform and the SDK for Android. Create an account and install the Android SDK in your application and in seconds you will be able to send SMS messages.
 
